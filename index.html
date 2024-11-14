@@ -9,67 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-*{
-    margin: 0;
-    padding: 0;
-
-    font-family: "Montserrat", sans-serif;
-}
-
-:root{
-    --roxo-200: #8E35FF;
-    --roxo-300: #5A13B4;
-    --roxo-400: #3B1270;  
-}
-
-a{
-    color: var(--roxo-300);
-    font-size: 0.875rem;
-    text-decoration: none;
-}
-
-h1, h2, p{
-    color: var(--roxo-400);
-}
-
-
-.menuNavegacao{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.inputHeader{
-    border: none;
-    color: var(--roxo-300);
-}
-
-.inputHeader:focus{
-    outline:none;
-}
-
-.inputHeader::placeholder{
-    color: var(--roxo-300);
-}
-
-.campoPesquisa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--roxo-300);
-    opacity: 0.40;
-    padding: 0.1875rem 0.8125rem;
-}
-
-
-</style>
 
 <body>
     <header>
@@ -78,11 +20,113 @@ h1, h2, p{
                 <li><a href="#"><img src="img/logo.png"></a></li>
                 <li><a href="#">Graduação</a></li>
                 <li><a href="#">Blog</a></li>
-                <li class="campoPesquisa"><input class="inputHeader" placeholder="Buscar"><a href="#"><img src="img/lupa.svg"></a></li>
-                <li><a href="#"><img src="img/cadeado.svg">Ambiente Virtual</a></li>
+                <li class="campoPesquisa"><input class="inputHeader" placeholder="Buscar"><a href="#"><img width="15px" height="15px" src="img/lupa.svg" alt="Lupa"></a></li>
+                <li><a href="#"><img width="11px" height="14px" src="img/cadeado.svg" alt="Cadeado">Ambiente Virtual</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="tamanhoSecao">
+            <h1>Nós somos uma <b>faculdade digital</b></h1>
+            <div class="posicaoSubTitulo">
+                <span class="subTitulo">Você, preparado para <b>o futuro.</b></span>
+                <img class="animacaoSeta" wdith="35px" height="200px" src="img/seta-amarela.png" alt="Seta amarela apontando para baixo">
+                <div class="tamanhoTexto">
+                    <span>Se preparar para o mercado é uma coisa, prosperar nele é outra.<b>Noss graduação te ajuda com as duas.</b></span>
+                </div>
+            </div>
+        </section>
 
+        <section style="background-color: #3B1270;">
+            <div class="tamanhoSecao">
+                <div class="displayCarrossel">
+                    <img class="posicaoPersonagem" src="img/personagem.jpg">
+                    <div class="preenchimentoCursos">
+                        <h2 class="letraBranca tamanhoTituloCarreira">Escolha sua Carreira</h2>
+                        <div class="containerNomeCursos">
+                            <span class="letraBranca">Graduação</span>
+                            <span class="letraBranca">Análise e Desenvolvimento de Sistemas</span>
+                            <div class="containerBotoes">
+                                <img src="img/seta-esquerda.svg">
+                                <img src="img/seta-direita.svg">
+                            </div>
+                        </div>
+                        <span class="letraBranca tamanhoTituloSoftSkills">Soft Skills que você vai desenvolver: </span>
+                        <div class="containerSoftSkills">
+                            <div class="containerSkills">
+                                <div>
+                                    <span class="letraBranca textoSkills">Criatividade</span>
+                                    <div class="containerNivelSkills">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="letraBranca textoSkills">Liderança</span>
+                                    <div class="containerNivelSkills">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-vazia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-vazia.png">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="letraBranca textoSkills">Gerenciamento de Tempo</span>
+                                    <div class="containerNivelSkills">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-vazia.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="containerSkills">
+                                <div>
+                                    <span class="letraBranca textoSkills">Inovação</span>
+                                    <div class="containerNivelSkills">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="letraBranca textoSkills">Comunicação</span>
+                                    <div class="containerNivelSkills">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-vazia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-vazia.png">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="letraBranca textoSkills">Habilidade Interpessoal</span>
+                                    <div class="containerNivelSkills">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-cheia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-vazia.png">
+                                        <img class="tamanhoEstrela" src="img/estrela-vazia.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
