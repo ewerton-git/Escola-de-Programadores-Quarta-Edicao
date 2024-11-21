@@ -6,11 +6,14 @@
 }
 
 :root{
+    --roxo-100: #ded0f173;
     --roxo-200: #8E35FF;
     --roxo-300: #5A13B4;
-    --roxo-400: #3B1270; 
+    --roxo-400: rgb(59, 18, 112); 
     
     --branco-300: #ffffff;
+
+    --dourado-300: #CC7F0B;
 }
 
 a{
@@ -33,9 +36,18 @@ header{
     margin: 2% 15%;
 }
 
+footer{
+    background-color: var(--roxo-100);
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
 .tamanhoSecao{
         margin: 4% 15%;
 }
+
+
 /*Cabeçalho*/
 .menuNavegacao{
     list-style-type: none;
@@ -62,6 +74,7 @@ header{
     padding: 0.1875rem 0.8125rem;
 }
 /*Fim Cabeçalho*/
+
 
 /*Título*/
 .subTitulo {
@@ -102,11 +115,12 @@ header{
 
 
 /*Carrossel de Cursos*/
-.displayCarrossel{
+.displayCarrossel {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     gap: 5%;
+    margin-bottom: -50px;
 }
 
 .posicaoPersonagem{
@@ -174,3 +188,55 @@ header{
     scale: 1.5;
 }
 
+.botaoInscrever{
+    background-color: var(--roxo-200);
+    color: var(--branco-300);
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 2% 0;
+    position: relative;
+    top: 45px;
+}
+
+/*Fim Carrossel de Cursos*/
+
+
+
+/*Blog*/
+
+.containerPostBlog{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3%
+}
+
+.corTexto{
+    color: var(--dourado-300);
+}
+
+.containerBotao{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    max-width: 340px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.containerBotao:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(59, 18, 112, 0.2);
+}
+
+.containerTituloPost{
+    padding: 4%;
+}
+
+.containerInformacoesPost{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
