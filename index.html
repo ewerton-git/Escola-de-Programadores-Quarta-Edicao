@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="corpo">
     <header>
         <nav>
             <ul class="menuNavegacao">
@@ -23,16 +23,22 @@
                 <li><a href="#">Graduação</a></li>
                 <li><a href="#">Blog</a></li>
                 <li class="campoPesquisa"><input class="inputHeader" placeholder="Buscar"><a href="#"><img width="15px" height="15px" src="img/lupa.svg" alt="Lupa"></a></li>
+                <li><button onclick="noturno()"><img width="20px" height="20px" src="img/sol.png"></button></li>
                 <li><a href="#"><img width="11px" height="14px" src="img/cadeado.svg" alt="Cadeado">Ambiente Virtual</a></li>
             </ul>
         </nav>
     </header>
+
+    <div id="popUp" style="display:none;">
+
+    </div>
+
     <main>
         <section class="tamanhoSecao">
             <h1>Nós somos uma <b>faculdade digital</b></h1>
             <div class="posicaoSubTitulo">
                 <span class="subTitulo">Você, preparado para <b>o futuro.</b></span>
-                <img class="animacaoSeta" wdith="35px" height="200px" src="img/seta-amarela.png" alt="Seta amarela apontando para baixo">
+                <img id="setaBaixo" class="animacaoSeta" wdith="35px" height="200px" src="img/seta-amarela.png" alt="Seta amarela apontando para baixo">
                 <div class="tamanhoTexto">
                     <span>Se preparar para o mercado é uma coisa, prosperar nele é outra.<b>Noss graduação te ajuda com as duas.</b></span>
                 </div>
@@ -190,5 +196,7 @@
             <a><img src="img/qr-code.png"></a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

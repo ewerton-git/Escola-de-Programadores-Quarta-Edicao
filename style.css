@@ -47,6 +47,17 @@ footer{
         margin: 4% 15%;
 }
 
+#popUp{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    background-color: var(--roxo-200);
+    width: 400px;
+    height: 400px;
+    z-index: 9999;
+}
+
+
 
 /*Cabeçalho*/
 .menuNavegacao{
