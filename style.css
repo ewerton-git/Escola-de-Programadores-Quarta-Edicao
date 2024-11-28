@@ -47,17 +47,6 @@ footer{
         margin: 4% 15%;
 }
 
-#popUp{
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    background-color: var(--roxo-200);
-    width: 400px;
-    height: 400px;
-    z-index: 9999;
-}
-
-
 
 /*Cabeçalho*/
 .menuNavegacao{
@@ -224,7 +213,7 @@ footer{
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 3%
+    margin-top: 3%;
 }
 
 .corTexto{
@@ -250,4 +239,48 @@ footer{
     margin-top: 10%;
     display: flex;
     justify-content: space-between;
+}
+
+
+/*Fim Blog*/
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1919px){
+    header{
+        margin: 2% 10%;
+    }
+
+    .tamanhoSecao {
+        margin: 4% 10%;
+    }
+
+    .subTitulo {
+        font-size: 5.5rem;
+    }
+
+    .tamanhoTexto{
+        max-width: 16%;
+        font-size: 0.9rem;
+    }
+
+    .botaoInscrever{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 2560px){
+    header{
+        margin: 2% 25%;
+    }
+
+    .tamanhoSecao {
+        margin: 4% 25%;
+    }
 }
